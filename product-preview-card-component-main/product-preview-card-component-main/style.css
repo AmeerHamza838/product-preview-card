@@ -1,0 +1,156 @@
+:root{
+    /* primary */
+    --dark-cyan: hsl(158, 36%, 37%);
+    --very-dark-cyan: hsl(159, 43%, 18%);
+    --cream: hsl(30, 38%, 92%);
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+
+}
+
+.attribution {
+    position: relative;
+    top: 41rem;
+    text-align: center;
+    font-size: 11px;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--cream);
+    width: 100%;
+  
+}
+
+.container { 
+    border-radius: 1rem;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+
+    background: var(--white);
+    width: 45rem;
+    height: 33.7rem;
+
+    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.image{
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem 0 2.5rem;
+}
+
+.perfume{
+    letter-spacing: .5rem;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+    line-height: 1.5;
+    
+}
+
+.heading{
+    color: var(--very-dark-blue);
+    font-weight: bold;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+}
+
+
+.prices{ 
+    font-family: 'Fraunces', serif;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.discountedPrice{
+    color: var(--dark-cyan)
+}
+
+.price {
+    margin-left: 1.5rem;
+}
+
+.ATCbtn{
+   display: grid;
+   place-items: center;
+}
+
+.svg{
+    position: relative;
+    right: .7rem;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--dark-cyan);
+    color: white;
+
+    width: 100%;
+    height: 3rem;
+
+    border: none;
+    border-radius: .5rem;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+button:hover{
+    background-color: var(--very-dark-cyan);
+    cursor: pointer;
+   
+}
+
+
+
+@media screen and (max-width: 376px) {
+
+
+    .image{
+        background-image: url(./images/image-product-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: 300px 100px;
+
+    }
+    .container{
+        width: 90%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
