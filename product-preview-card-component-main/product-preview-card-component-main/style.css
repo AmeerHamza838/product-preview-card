@@ -34,6 +34,9 @@ body{
 
 .container { 
     border-radius: 1rem;
+
+    /* this is to center the container*/
+    
     position: absolute;
     inset: 0;
     margin: auto;
