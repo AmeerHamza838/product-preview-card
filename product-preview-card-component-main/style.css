@@ -109,7 +109,7 @@ p{
    place-items: center;
 }
 
-.svg{
+svg{
     position: relative;
     right: .7rem;
 }
