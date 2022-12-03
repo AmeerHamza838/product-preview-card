@@ -12,7 +12,7 @@
 
 .attribution {
     position: relative;
-    top: 41rem;
+    top: 100vh;
     text-align: center;
     font-size: 11px;
   }
@@ -100,7 +100,8 @@ p{
 }
 
 .price {
-    margin-left: 1.5rem;
+    width: 10px;
+    margin-left: 1.5em;
 }
 
 .ATCbtn{
@@ -144,13 +145,15 @@ button:hover{
 
     .container{
         width: 90%;
+        
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
-        min-height: 600px;
+        min-height:100%;
     }
     .image{
+        height: 300px;
         background-image: url(./images/image-product-mobile.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
@@ -160,6 +163,22 @@ button:hover{
         border-bottom-right-radius: 0px;
         min-height: 190px;
     }
-    
+    .details{
+        margin: 0px;
+        padding: 20px;
+
+    }
+    .perfume{
+        margin: 0px;
+    }
+    button{
+        margin-bottom: 2rem;
+    }
+    .heading{
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+
     
 }
